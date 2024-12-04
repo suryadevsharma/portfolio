@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya - Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0e0b20;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background-color: rgba(18, 18, 62, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .left {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #a46de8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #a46de8;
+        }
+
+        /* First Section */
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 100px 10%;
+            margin-top: 80px;
+            flex-wrap: wrap;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            max-width: 500px;
+        }
+
+        .leftSection span {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 2rem;
+            color: #a46de8;
+        }
+
+        .buttons {
+            display: flex;             /* Arrange buttons horizontally */
+            gap: 10px;                 /* Space between buttons */
+            margin-top: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;     /* Remove default link styling */
+            display: inline-block;     /* Prevent unwanted spacing */
+        }
+
+        .buttons .btn {
+            background-color: #a46de8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons .btn:hover {
+            background-color: #7d51c9;
+        }
+
+        .rightSection img {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Second Section */
+        .secondSection {
+            text-align: center;
+            padding: 50px 10%;
+        }
+
+        .text-gray {
+            color: #aaa;
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+            color: #a46de8;
+        }
+
+        .experience-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;  /* Space between items */
+        }
+
+        .experience-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #1a1a40;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .experience-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .vertical-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .vertical-desc {
+            font-size: 1rem;
+            color: #aaa;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(18, 18, 62, 0.9);
+            color: #aaa;
+            margin-top: 30px;
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .firstSection .leftSection,
+        .firstSection .rightSection img {
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .firstSection .rightSection img {
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <div class="left">Suryadev Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="home">
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">Suryadev</span></div>
+                <div>And I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="resume.pdf" download>
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/suryadev-sharma-26825a213/" target="_blank">
+                        <button class="btn">LinkedIn Profile</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="dev.png" alt="Developer Image">
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="secondSection" id="about">
+            <hr>
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="experience-container">
+                <div class="experience-item">
+                    <img src="developer.png" alt="HTML Developer">
+                    <div>
+                        <div class="vertical-title">HTML Developer (2019-2021)</div>
+                        <div class="vertical-desc">Built responsive web pages and components using HTML and CSS.</div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <img src="nodejs.png" alt="Node.js Developer">
+                    <div>
+                        <div class="vertical-title">Node.js Developer (2021-2023)</div>
+                        <div class="vertical-desc">Developed backend services and RESTful APIs using Node.js.</div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <img src="instagram.png" alt="Web Developer">
+                    <div>
+                        <div class="vertical-title">Web Developer (2023-2024)</div>
+                        <div class="vertical-desc">Designed and maintained dynamic, user-friendly websites with modern frameworks.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Suryadev. All rights reserved.
+    </footer>
+
+    <!-- Typed.js Script -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Java Developer', 'Web Designer'],
+            typeSpeed: 60,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

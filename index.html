@@ -13,7 +13,7 @@
         }
 
         body {
-            background-color: #0e0b20;
+            background-color: #161423;
             color: white;
             font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth;
@@ -81,14 +81,14 @@
         }
 
         .buttons {
-            display: flex;             /* Arrange buttons horizontally */
-            gap: 10px;                 /* Space between buttons */
+            display: flex;
+            gap: 10px;
             margin-top: 20px;
         }
 
         .buttons a {
-            text-decoration: none;     /* Remove default link styling */
-            display: inline-block;     /* Prevent unwanted spacing */
+            text-decoration: none;
+            display: inline-block;
         }
 
         .buttons .btn {
@@ -113,7 +113,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
-        /* Second Section */
+        /* Second Section (Work Experience) */
         .secondSection {
             text-align: center;
             padding: 50px 10%;
@@ -132,17 +132,20 @@
 
         .experience-container {
             display: flex;
-            flex-direction: column;
-            gap: 20px;  /* Space between items */
+            flex-wrap: wrap;
+            justify-content: center;
+           
         }
 
         .experience-item {
             display: flex;
             align-items: center;
-            padding: 20px;
+            padding: 15px;
             background-color: #1a1a40;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 320px;
+            width: 100%;
         }
 
         .experience-item img {
@@ -152,7 +155,7 @@
         }
 
         .vertical-title {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: bold;
         }
 
@@ -160,6 +163,128 @@
             font-size: 1rem;
             color: #aaa;
             margin-top: 5px;
+        }
+
+        /* Services Section */
+        .servicesSection {
+            background-color: #1a1a40;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .servicesSection h2 {
+            font-size: 2.5rem;
+            color: #a46de8;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .service-item {
+            background-color: #222;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .service-item h3 {
+            font-size: 1.6rem;
+            color: #a46de8;
+        }
+
+        .service-item p {
+            color: #aaa;
+            font-size: 1rem;
+        }
+
+        /* Projects Section */
+        .projectsSection {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .projectsSection h2 {
+            font-size: 2.5rem;
+            color: #a46de8;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-item {
+            background-color: #222;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-item h3 {
+            font-size: 1.6rem;
+            color: #a46de8;
+        }
+
+        .project-item p {
+            color: #aaa;
+            font-size: 1rem;
+        }
+        .contactSection h2,h1{
+            background-color: #1a1a40;
+            font-size: medium;
+        }
+
+        /* Contact Section */
+        .contactSection {
+            background-color: #1a1a40;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .contactSection h2 {
+            font-size: 2.5rem;
+            color: #a46de8;
+        }
+
+        .contactSection form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contactSection input,
+        .contactSection textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            color: #aaa;
+            background-color: #222;
+        }
+
+        .contactSection button {
+            background-color: #a46de8;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .contactSection button:hover {
+            background-color: #7d51c9;
         }
 
         /* Footer */
@@ -220,7 +345,7 @@
                 <div>And I am a passionate</div>
                 <span id="element"></span>
                 <div class="buttons">
-                    <a href="RESUME.pdf" download>
+                    <a href="resume.pdf" download>
                         <button class="btn">Download Resume</button>
                     </a>
                     <a href="https://www.linkedin.com/in/suryadev-sharma-26825a213/" target="_blank">
@@ -238,6 +363,7 @@
             <hr>
             <span class="text-gray">What I have done so far</span>
             <h1>Work Experience</h1>
+            <br>
             <div class="experience-container">
                 <div class="experience-item">
                     <img src="developer.png" alt="HTML Developer">
@@ -263,6 +389,59 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="servicesSection" id="services">
+            <h2>Services</h2>
+            <div class="services-container">
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>Building responsive and interactive websites.</p>
+                </div>
+                <div class="service-item">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-friendly and visually appealing interfaces.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Backend Development</h3>
+                    <p>Creating robust and scalable backend solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projectsSection" id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <h3>Project One</h3>
+                    <p>Developed a dynamic website using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Project Two</h3>
+                    <p>Created an API with Node.js and Express.js for data management.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Project Three</h3>
+                    <p>Designed a responsive e-commerce website with modern frameworks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contactSection" id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <h1>email:suryadevsharma11@gmail.com</h1>
+                <h1>mob_no:9120708359</h1>
+            </form>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 
